@@ -66,7 +66,7 @@ $app->get(
 $app->get(
     '/ticket/{id}',
     function (Request $request, Response $response, $args) {
-        $ticketID = (int)$args['id'];
+        $ticketID = (int) $args['id'];
         $mapper = new TicketMapper($this->db);
         $ticket = $mapper->getTicketById($ticketID);
 
