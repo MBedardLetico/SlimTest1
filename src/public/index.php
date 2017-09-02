@@ -48,7 +48,7 @@ $container['db'] = function ($c) {
 $app->get(
     '/',
     function (Request $request, Response $response) {
-        echo "hello World";
+        echo "hello World2";
     }
 );
 
